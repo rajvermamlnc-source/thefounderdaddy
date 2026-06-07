@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>thefounderdaddy — Coming Soon</title>
+<meta name="description" content="thefounderdaddy. Coming soon. Stay tuned.">
+<meta property="og:title" content="thefounderdaddy — Coming Soon">
+<meta property="og:description" content="Coming soon. Stay tuned.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thefounderdaddy.com">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23EDE6D6'/><circle cx='50' cy='50' r='18' fill='%23B23128'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  /* DHVANI brand system — Ink · Bone · Sindoor. No gradients. No tints. */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --ink: #0E0E14;
+    --bone: #EDE6D6;
+    --sindoor: #B23128;
+  }
+
+  html, body { height: 100%; }
+
+  body {
+    background: var(--bone);
+    color: var(--ink);
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  /* Page furniture — like the brand book */
+  .topbar, .footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 clamp(20px, 5vw, 64px);
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+
+  .topbar { top: 34px; }
+  .lower { text-transform: lowercase; }
+  .footer { bottom: 30px; align-items: center; }
+
+  .wrap {
+    padding: 24px;
+    max-width: 980px;
+    animation: rise 1.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.42em;
+    text-indent: 0.42em;
+    text-transform: uppercase;
+    color: var(--sindoor);
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(2.4rem, 10vw, 7rem);
+    white-space: nowrap;
+    line-height: 1.02;
+    letter-spacing: 0.01em;
+  }
+
+  h1 em {
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  /* The echo — never remove it. */
+  .echo {
+    display: inline-block;
+    width: 0.13em;
+    height: 0.13em;
+    border-radius: 50%;
+    background: var(--sindoor);
+    margin-left: 0.18em;
+    vertical-align: 0.06em;
+  }
+
+  .standfirst {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: clamp(1.3rem, 3vw, 1.9rem);
+    font-weight: 500;
+    margin-top: 34px;
+  }
+
+  .body-line {
+    font-size: clamp(0.85rem, 1.6vw, 1rem);
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    margin-top: 20px;
+    color: var(--ink);
+  }
+
+  .rule {
+    width: 44px;
+    height: 1px;
+    margin: 46px auto 0;
+    background: var(--sindoor);
+  }
+
+  /* Wordmark-style credit: wide tracking + Sindoor dot */
+  .managed { display: inline-flex; align-items: baseline; gap: 0.5em; }
+  .managed .dhvani {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.32em;
+  }
+  .managed .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--sindoor);
+  }
+
+  @media (max-width: 640px) {
+    .topbar { display: none; }
+    .footer { flex-direction: column; gap: 10px; }
+  }
+</style>
+</head>
+<body>
+  <header class="topbar">
+    <span class="lower">thefounderdaddy</span>
+    <span>MMXXVI</span>
+  </header>
+
+  <main class="wrap">
+    <div class="eyebrow">Coming Soon</div>
+    <h1>thefounder<em>daddy</em><span class="echo"></span></h1>
+    <p class="standfirst">Something worth waiting for.</p>
+    <p class="body-line">Stay tuned. The work, eventually, speaks.</p>
+    <div class="rule"></div>
+  </main>
+
+  <footer class="footer">
+    <span class="lower">&copy; 2026 thefounderdaddy.com</span>
+    <span class="managed">Managed by&nbsp;<span class="dhvani">DHVANI</span><span class="dot"></span></span>
+  </footer>
+</body>
+</html>
